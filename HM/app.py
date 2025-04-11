@@ -22,6 +22,9 @@ store_codes = {
     'Catering - Englewood OH': '026',
     'Catering - Marysville': '047',
     'Catering - Ozark, MO': '052',
+    'Catering - Miramar': '041',
+    'Catering - St. Marys, GA': '058',
+    'Catering - Centerville': '050',
     'Centerville - Far Hills, OH': '050',
     'Circleville, OH': '066',
     'Championsgate FL': '008',
@@ -71,7 +74,7 @@ store_codes = {
     'Pinellas Park FL': '020',
     'Port St. Lucie': '037',
     'Prattville': '053',
-    'Springfield, MO': '044',
+    'Springfield (Battlefield Rd)': '044',
     'St. Augustine': '029',
     'Statesboro, GA': '062',
     'Sunrise': '012',
@@ -162,4 +165,7 @@ def index():
 # Vercel specific handler
 def handler(request):
     return app(request, environ=request.environ, start_response=request.start_response)
+
+if __name__ == "__main__":
+    app.run(debug=True)
 
